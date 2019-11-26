@@ -9,7 +9,11 @@ class River
 
   def number_of_fish
     @fish.length
-  end 
+  end
+
+  def remove_fish(fish)
+    @fish.delete(fish)
+  end
 
 
 
