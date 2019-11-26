@@ -16,6 +16,9 @@ attr_reader :name, :type
     @stomach.push(fish)
   end
 
+  def roar()
+    return "Roaar"
+  end
 
 
 end

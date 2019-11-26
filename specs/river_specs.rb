@@ -34,11 +34,13 @@ class RiverTest <MiniTest::Test
     assert_equal(2, @river1.number_of_fish)
   end
 
-  def test_fish_removed_when_bear_eats
+  def test_fish_removed_when_bear_eats_and_roars
     @river1.remove_fish(@fish1)
     @bear1.add_fish(@fish1)
+    roar = @bear1.roar()
     assert_equal(2, @river1.number_of_fish)
     assert_equal(1, @bear1.fish_count)
+    assert_equal("Roaar", roar)
 
   end
 
